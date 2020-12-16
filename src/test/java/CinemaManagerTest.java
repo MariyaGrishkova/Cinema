@@ -13,7 +13,7 @@ class ManagerTest {
     void addFilm() {
 
         CinemaData[] actual = manager.addFilm(film);
-        CinemaData[] expected = {new CinemaData(1, "Bladshort", "action"),
+        CinemaData[] expected = {new CinemaData(1, "Bladshot", "action"),
                 new CinemaData(2, "Onward", "cartoon" ),
                 new CinemaData(3, "Hotel Belgrad", "comedy" ),
                 new CinemaData(4, "Gentlemen", "action"),

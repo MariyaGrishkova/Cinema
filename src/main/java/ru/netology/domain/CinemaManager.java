@@ -12,9 +12,8 @@ public class CinemaManager {
             new CinemaData(3, "Hotel Belgrad", "comedy"),
             new CinemaData(4, "Gentlemen", "action"),
             new CinemaData(5, "Invisible", "Thriller"),
-            new CinemaData(6, "Troll's tour", "cartoon"),
-            new CinemaData(7, "Number 1", "comedy")};
-    CinemaData film = new CinemaData(8, "The Vigil", "suspense");
+            new CinemaData(6, "Troll's tour", "cartoon")};
+    CinemaData film = new CinemaData(7, "Number 1", "comedy");
 
     public CinemaData[] addFilm(CinemaData film) {
         int length = list.length + 1;
