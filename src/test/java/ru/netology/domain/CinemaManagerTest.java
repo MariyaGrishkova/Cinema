@@ -19,7 +19,9 @@ class ManagerTest {
                 new CinemaData(4, "Gentlemen", "action"),
                 new CinemaData(5, "Invisible", "Thriller"),
                 new CinemaData(6, "Troll's tour", "cartoon"),
-                new CinemaData(7, "Number 1", "comedy")};
+                new CinemaData(7, "Better tan sex", "comedy"),
+                new CinemaData(8, "Beauty and the Beast", "fairytail"),
+                new CinemaData(9,"Monster INC", "cartoon")};
         assertArrayEquals(expected, actual);
     }
 
