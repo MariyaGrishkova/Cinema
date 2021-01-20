@@ -7,38 +7,39 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CinemaManager {
     private int neededQuantityOfFilmsToAdd = 3;
-    CinemaData[] list = {new CinemaData(
-    int id;
-    string name;
-    string genre);
+    public CinemaData[] list = new CinemaData[]{new CinemaData(
+    private int id,
+    private String name,
+    private String genre)
+};
 }
 
-    public CinemaData[] addFilm(CinemaData film) {
-        int length = list.length + 1;
-        CinemaData[] addedFilm = new CinemaData[length];
-        for (int i = 0; i < list.length; i++) {
-            addedFilm[i] = list[i];
+public CinemaData[]addFilm(CinemaData film){
+        int length=list.length+1;
+        CinemaData[]addedFilm=new CinemaData[length];
+        for(int i=0;i<list.length;i++){
+        addedFilm[i]=list[i];
         }
-        int lastIndex = addedFilm.length - 1;
-        addedFilm[lastIndex] = film;
-        list = addedFilm;
+        int lastIndex=addedFilm.length-1;
+        addedFilm[lastIndex]=film;
+        list=addedFilm;
         System.out.println(list);
         return list;
 
 //        for (int i = 0; i < list.length; i++) {
 //            System.out.println(i);
-    }
-
-
-    public CinemaData[] showAddedFilms() {
-        for (int i = list.length - 1; i > list.length - (neededQuantityOfFilmsToAdd + 1) & i >= 0; i--) {
-            System.out.print(list[i]);
         }
-            for (int i = list.length; i > list.length - (neededQuantityOfFilmsToAdd + 1) & i <=10; i--){
-            System.out.print(list[i])
+
+
+public CinemaData[]showAddedFilms(){
+        for(int i=list.length-1;i>list.length-(neededQuantityOfFilmsToAdd+1)&i>=0;i--){
+        System.out.print(list[i]);
+        }
+        for(int i=list.length;i>list.length-(neededQuantityOfFilmsToAdd+1)&i<=10;i--){
+        System.out.print(list[i])
         }
 
         return new CinemaData[0];
-    }
+        }
 
-}
+        }
